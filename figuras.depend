@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1477620832 source:d:\figuras\main.cpp
+	<iostream>
+	"polygonn.h"
+
+1477371388 d:\figuras\include\figuras.h
+	<iostream>
+	<cmath>
+
+1477371388 source:d:\figuras\src\figuras.cpp
+	"figuras.h"
+
+1477630297 source:d:\figuras\src\polygonn.cpp
+	"polygonn.h"
+	<iostream>
+	<cmath>
+
+1477633160 d:\figuras\include\polygonn.h
+	<iostream>
+
+1477620834 source:e:\figuras\main.cpp
+	<iostream>
+	"polygonn.h"
+
+1478553828 e:\figuras\include\polygonn.h
+	<iostream>
+
+1477371390 source:e:\figuras\src\figuras.cpp
+	"figuras.h"
+
+1477371390 e:\figuras\include\figuras.h
+	<iostream>
+	<cmath>
+
+1478553628 source:e:\figuras\src\polygonn.cpp
+	"polygonn.h"
+	<iostream>
+	<cmath>
+
