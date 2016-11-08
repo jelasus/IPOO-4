@@ -27,22 +27,23 @@ PointArray::PointArray(const PointArray &pv) {
         points[i]=pv.points[i];
 }
 PointArray::~PointArray() {delete []points;}
-void PointArray::_resize(const number n) {
+void PointArray::_resize(const number _size) {
     Point *p1 =new Point[_size];
-    for(int i=0;i<_size;i++)
-        p1[i]=points[i]; //llenamos p1 con points
-    delete []points; //borramos el contenido de points
-    points=new Point[n]; //y creamos points con el tamaño n
-    for(int i=0;i<n;i++)
-        if(i<_size)
-            points[i]=p1[i]; //llenamos points con p1
-    delete []p1;
-    _size=n; //reajuste del tamaño del arreglo
+    number menor;
+    if (this->size<_size)
+        menor=this->size;
+    else
+        menor=_size;
+    for(int i=0;i<menor;i++)
+        p1[i]=this->points[i];
+    delete []points; 
+    this->points=p1; 
+    _size=n; 
 }
 void PointArray::_push_back(const Point &p1) {
     PointArray::_resize(_size+1); //agregamos un espacio a la derecha
     points[_size]=p1; //llenamos ese espacio
-    ++_size; //reajuste del tamaño del arreglo
+    ++_size; //reajuste del tamaÃ±o del arreglo
 }
 void PointArray::_insert(const number pos,const Point &p1) {
     cout << "insert since 1 to pos" << '\n';
@@ -50,19 +51,19 @@ void PointArray::_insert(const number pos,const Point &p1) {
     for(int i=_size;_size-i>0;i--)
         points[i]=points[i-1]; //dejamos el espacio de pos vacio
     points[pos]=p1; //llenamos el espacio de pos
-    ++_size; //reajuste del tamaño del arreglo
+    ++_size; //reajuste del tamaÃ±o del arreglo
 }
 void PointArray::_remove(const number pos) {
     cout << "remove since 1 to pos" << '\n';
     for(int i=pos;_size-pos>0;i++)
         points[i+1]=points[i]; //movemos el valor en pos al extremo derecho
     PointArray::_resize(_size-1); //lo eliminamos
-    --_size; //reajuste del tamaño del arreglo
+    --_size; //reajuste del tamaÃ±o del arreglo
 }
 const number PointArray::getsize() const {return _size;}
 void PointArray::_clear() {
     delete []points; //borar contenido
-    _size=0; //reajuste del tamaño del arreglo
+    _size=0; //reajuste del tamaÃ±o del arreglo
     points=new Point[_size];
 }
 Point* PointArray::get(const number pos) {
