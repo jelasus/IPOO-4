@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1479758872 source:/media/jesus/10EA24FFEA24E328/c++/Asteroid/main.cpp
+	"GAME.h"
+	"KEYBOARD.h"
+	"BITMAP.h"
+	"NAVE.h"
+
+1479523785 source:/media/jesus/10EA24FFEA24E328/c++/Asteroid/src/Nave.cpp
+	"Nave.h"
+
+1479523785 /media/jesus/10EA24FFEA24E328/c++/Asteroid/include/Nave.h
+
+1479702690 /media/jesus/10EA24FFEA24E328/c++/Asteroid/include/GAME.h
+	"types.h"
+	<cstdio>
+	<iostream>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+
+1479702965 /media/jesus/10EA24FFEA24E328/c++/Asteroid/include/types.h
+
+1479758812 /media/jesus/10EA24FFEA24E328/c++/Asteroid/include/KEYBOARD.h
+	"GAME.h"
+
+1479757600 /media/jesus/10EA24FFEA24E328/c++/Asteroid/include/BITMAP.h
+	"GAME.h"
+
+1479758654 /media/jesus/10EA24FFEA24E328/c++/Asteroid/include/NAVE.h
+	"GAME.h"
+	"BITMAP.h"
+
+1479703036 source:/media/jesus/10EA24FFEA24E328/c++/Asteroid/src/GAME.cpp
+	"GAME.h"
+
+1479703036 source:/media/jesus/10EA24FFEA24E328/c++/Asteroid/src/KEYBOARD.cpp
+	"KEYBOARD.h"
+
+1479758732 source:/media/jesus/10EA24FFEA24E328/c++/Asteroid/src/NAVE.cpp
+	"NAVE.h"
+
+1479757600 source:/media/jesus/10EA24FFEA24E328/c++/Asteroid/src/BITMAP.cpp
+	"BITMAP.h"
+
